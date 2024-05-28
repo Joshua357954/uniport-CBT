@@ -59,6 +59,7 @@ const Card = ({ icon, bg, title, subtitle, openSelection }) => {
 import { FaEnvelope, FaBuilding, FaSignOutAlt } from "react-icons/fa";
 import { protectedHome } from "./_utils/protectRoute";
 import toast from "react-hot-toast";
+import Head from "next/head";
 
 const ProfileModal = ({ onClose }) => {
   const user = getUser();
@@ -154,6 +155,11 @@ function home() {
 
   return (
     <>
+        <Head>
+            <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23808080' d='M512 256c0 141.385-114.615 256-256 256C114.615 512 0 397.385 0 256 0 114.615 0 0 114.615 0 256c0 84.44 41.22 159.071 104.565 204.921 13.178 7.521 24.209 1.172 24.209-14.535v-73.565c0-18.166 12.514-33.676 30.867-37.73C141.688 350.673 192 295.525 192 231.392V192h-32c-35.29 0-64-28.71-64-64v-32c0-17.673 14.327-32 32-32h16c8.837 0 16-7.163 16-16V80c0-8.837-7.163-16-16-16H96C78.327 64 64 78.327 64 96v24c0 53.051 43.481 96 96 96h32v-39.392c0-10.473 6.77-20.182 16.792-23.488C222.233 155.122 256 196.151 256 231.392v64.103c0 28.717-15.429 54.317-40.524 68.155-15.309 8.692-19.207 29.832-6.896 42.654C230.927 415.835 240 436.499 240 456v32c0 8.837 7.163 16 16 16h32c8.837 0 16-7.163 16-16v-32c0-17.673 14.327-32 32-32h16c17.673 0 32-14.327 32-32v-16c0-8.837-7.163-16-16-16h-48V264h48c35.29 0 64 28.71 64 64v32c0 17.673-14.327 32-32 32h-16c-8.837 0-16 7.163-16 16v16c0 35.29 28.71 64 64 64h32c17.673 0 32-14.327 32-32v-24c0-66.274-53.726-120-120-120h-16v-48c0-17.673-14.327-32-32-32h-32V80c0-17.673-14.327-32-32-32h-16c-8.837 0-16 7.163-16 16v32c0 17.673 14.327 32 32 32h32v39.392c0 26.646 11.044 52.402 29.6 70.608C289.185 355.124 288 364.759 288 374.743v73.564c0 15.71 11.02 22.08 24.208 14.535C470.78 415.071 512 340.44 512 256z'/%3E%3C/svg%3E" />
+            
+            <title>CBT BOX - C.Sc Help Group (Built by Joshua Boyi)</title>
+        </Head>
       <Selection isOpen={open} onClose={() => setOpen(false)} />
       <div className="bg-gray-100 sm:w-2/4 mx-auto h-[100vh] flex flex-col gap-y-4 pb-3">
         <header class="w-full relative h-48 bg-gradient-to-r from-green-600 to-green-300">
