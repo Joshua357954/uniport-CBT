@@ -12,10 +12,7 @@ import CarbonEmbed from "../_components/CarbonEmbed";
 import { useRouter } from "next/navigation";
 import { protectedHome } from "app/_utils/protectRoute";
 
-const baseUrl =
-  process.env.NODE_ENV === "production"
-    ? "https://ill-lime-rabbit-vest.cyclic.app"
-    : "/api/quiz";
+const baseUrl = "/api/quiz";
 
 function LoaderText() {
   const [loadingText, setLoadingText] = useState("Loading...");
