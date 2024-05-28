@@ -34,7 +34,7 @@ const Card = ({ icon, bg, title, subtitle, openSelection }) => {
   return (
     <div
       onClick={openSelection}
-      className="card cursor-pointer flex items-center gap-3 drop-shadow-sm py-3 px-4 rounded mt-4 w-full bg-white h-[85px]"
+      className="card cursor-pointer flex items-center gap-3 drop-shadow-sm py-3 px-4 rounded mt-4 w-full bg-white h-[85px] select-none"
     >
       <div
         className={`${bg} w-16 rounded h-full flex justify-center items-center text-3xl`}
