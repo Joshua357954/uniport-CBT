@@ -1,64 +1,76 @@
-
 // Function to add data to localStorage
 export const addUser = (name, userId, email, department, level, photoURL) => {
-    const userData = {
-      name,
-      userId,
-      email,
-      department,
-      level,
-      photoURL
-    };
-    console.log("Added User")
+  if (typeof window !== "undefined") {
+      const userData = {
+          name,
+          userId,
+          email,
+          department,
+          level,
+          photoURL
+      };
+      console.log("Added User");
   
-    localStorage.setItem('userData', JSON.stringify(userData));
-    return 'Done xoscdvodjv'
+      localStorage.setItem('userData', JSON.stringify(userData));
+  }
+  return 'Done xoscdvodjv';
 };
 
-  
 // Function to get data from localStorage
 export const getUser = () => {
-    const storedUserData = localStorage.getItem('userData');
-    if (storedUserData) {
-        return JSON.parse(storedUserData);
-    } else {
-        return null;
-    }
+  if (typeof window !== "undefined") {
+      const storedUserData = localStorage.getItem('userData');
+      if (storedUserData) {
+          return JSON.parse(storedUserData);
+      } else {
+          return null;
+      }
+  }
+  return null;
 };
-  
+
 // Function to clear data from localStorage
 export const clearUser = () => {
-    localStorage.removeItem('userData');
-    localStorage.removeItem('scoreboard');
+  if (typeof window !== "undefined") {
+      localStorage.removeItem('userData');
+      localStorage.removeItem('scoreboard');
+  }
 };
 
 // Function to update the scoreboard with a new entry
 export const updateScoreBoard = (time, score, course) => {
-    // Get existing scoreboard data from localStorage
-    const scoreboardData = JSON.parse(localStorage.getItem('scoreboard')) || [];
+  if (typeof window !== "undefined") {
+      // Get existing scoreboard data from localStorage
+      const scoreboardData = JSON.parse(localStorage.getItem('scoreboard')) || [];
   
-    // Add new entry to scoreboard data
-    scoreboardData.push({ time, score, course });
+      // Add new entry to scoreboard data
+      scoreboardData.push({ time, score, course });
   
-    // Store updated scoreboard data back to localStorage
-    localStorage.setItem('scoreboard', JSON.stringify(scoreboardData));
-  };
+      // Store updated scoreboard data back to localStorage
+      localStorage.setItem('scoreboard', JSON.stringify(scoreboardData));
+  }
+};
+
+// Function to retrieve the scoreboard data from localStorage
+export const getScoreboard = () => {
+  if (typeof window !== "undefined") {
+      // Retrieve scoreboard data from localStorage
+      const scoreboardData = localStorage.getItem('scoreboard');
   
-  // Function to retrieve the scoreboard data from localStorage
-  export const getScoreboard = () => {
-    // Retrieve scoreboard data from localStorage
-    const scoreboardData = localStorage.getItem('scoreboard');
-  
-    // If scoreboard data exists, parse it from JSON and return; otherwise, return an empty array
-    return scoreboardData ? JSON.parse(scoreboardData) : [];
-  };
-  
-  // Function to clear all scoreboard data from localStorage
-  export const clearScoreboard = () => {
-    // Clear all scoreboard data from localStorage
-    localStorage.removeItem('scoreboard');
-  };
-  
+      // If scoreboard data exists, parse it from JSON and return; otherwise, return an empty array
+      return scoreboardData ? JSON.parse(scoreboardData) : [];
+  }
+  return [];
+};
+
+// Function to clear all scoreboard data from localStorage
+export const clearScoreboard = () => {
+  if (typeof window !== "undefined") {
+      // Clear all scoreboard data from localStorage
+      localStorage.removeItem('scoreboard');
+  }
+};
+
 
 export const courseShortForms = {
     "accounting": "Accounting",
