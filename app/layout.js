@@ -6,7 +6,7 @@ export const metadata = {
   icon:'/favicon.svg'
 };
 
-export default function Layout({ children }) {
+export default function RootLayout({ children }) {
   return (
     <html>
       <Head>   
