@@ -214,8 +214,8 @@ const QuizScreen = ({ className }) => {
   };
 
   return (
-    <main className="w-full">
-      <Suspense fallback={<LoaderText />}>
+    <Suspense fallback={<LoaderText />}>
+      <main className="w-full">
         <>
           <nav className="fixed top-0 right-0 z-20 w-full h-16 flex justify-between items-center bg-green-700 px-2 text-gray-100">
             <div className="flex gap-x-5 items-center h-full ">
@@ -283,8 +283,8 @@ const QuizScreen = ({ className }) => {
         {submitted && <ScoreModal data={result} onClose={handleCloseModal} />}
 
         <Toaster />
-      </Suspense>
-    </main>
+      </main>{" "}
+    </Suspense>
   );
 };
 
