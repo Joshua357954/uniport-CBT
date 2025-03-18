@@ -1,6 +1,6 @@
 "use client";
 import "../../global.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import { MdClose } from "react-icons/md";
 import ScoreModal from "../_components/scoreModal";
 import { FaChevronLeft as Right } from "react-icons/fa";
@@ -215,9 +215,7 @@ const QuizScreen = ({ className }) => {
 
   return (
     <main className="w-full">
-      {loading ? (
-        <LoaderText />
-      ) : (
+      <Suspense fallback={<LoaderText />}>
         <>
           <nav className="fixed top-0 right-0 z-20 w-full h-16 flex justify-between items-center bg-green-700 px-2 text-gray-100">
             <div className="flex gap-x-5 items-center h-full ">
@@ -274,18 +272,18 @@ const QuizScreen = ({ className }) => {
             </div>
           </section>
         </>
-      )}
 
-      {modalVisible && (
-        <EndQuizModal
-          onClose={() => setModalVisible(false)}
-          onSubmit={submitQuiz}
-        />
-      )}
+        {modalVisible && (
+          <EndQuizModal
+            onClose={() => setModalVisible(false)}
+            onSubmit={submitQuiz}
+          />
+        )}
 
-      {submitted && <ScoreModal data={result} onClose={handleCloseModal} />}
+        {submitted && <ScoreModal data={result} onClose={handleCloseModal} />}
 
-      <Toaster />
+        <Toaster />
+      </Suspense>
     </main>
   );
 };
