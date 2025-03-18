@@ -9,7 +9,7 @@ import EndQuizModal from "../_components/endQuizModal";
 import axios from "axios";
 import { updateScoreBoard } from "../_utils/utils";
 import CarbonEmbed from "../_components/CarbonEmbed";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { protectedHome } from "app/_utils/protectRoute";
 
 const baseUrl = "/api/quiz";
@@ -114,7 +114,8 @@ const QuizScreen = ({ className }) => {
   const navigate = useRouter();
   const [modalVisible, setModalVisible] = useState(false);
   const [loading, setLoading] = useState(true);
-  const course = "csc280";
+  const searchParams = useSearchParams();
+  const course = searchParams.get("course") || "Loading...";
 
   const time = 30;
   const numberOfQuestions = 50;

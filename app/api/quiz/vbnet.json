@@ -1,0 +1,569 @@
+{
+  "questions": [
+    {
+      "question": "VB.Net is an object-oriented programming language developed by:",
+      "options": ["A. Microsoft", "B. Apple", "C. Oracle", "D. Google"],
+      "correct_answer": "A. Microsoft",
+      "id": 1
+    },
+    {
+      "question": "The `.Net` framework was introduced in which year?",
+      "options": ["A. 2000", "B. 2002", "C. 1998", "D. 2001"],
+      "correct_answer": "B. 2002",
+      "id": 2
+    },
+    {
+      "question": "Which of the following is NOT a keyword in VB.Net?",
+      "options": ["A. Dim", "B. Public", "C. Private", "D. Execute"],
+      "correct_answer": "D. Execute",
+      "id": 3
+    },
+    {
+      "question": "What is the default namespace used in VB.Net applications?",
+      "options": [
+        "A. System.Text",
+        "B. System.Drawing",
+        "C. System",
+        "D. Namespace"
+      ],
+      "correct_answer": "C. System",
+      "id": 4
+    },
+    {
+      "question": "VB.Net supports which type of programming model?",
+      "options": [
+        "A. Object-oriented",
+        "B. Event-driven",
+        "C. Procedural",
+        "D. All of the above"
+      ],
+      "correct_answer": "D. All of the above",
+      "id": 5
+    },
+    {
+      "question": "Which IDE is commonly used for developing VB.Net applications?",
+      "options": [
+        "A. Eclipse",
+        "B. IntelliJ IDEA",
+        "C. Visual Studio",
+        "D. NetBeans"
+      ],
+      "correct_answer": "C. Visual Studio",
+      "id": 6
+    },
+    {
+      "question": "What is the file extension for a VB.Net file?",
+      "options": ["A. .vb", "B. .net", "C. .cs", "D. .exe"],
+      "correct_answer": "A. .vb",
+      "id": 7
+    },
+    {
+      "question": "Which keyword is used to declare a variable in VB.Net?",
+      "options": ["A. Declare", "B. Define", "C. Dim", "D. Var"],
+      "correct_answer": "C. Dim",
+      "id": 8
+    },
+    {
+      "question": "VB.Net is considered:",
+      "options": [
+        "A. Low-level",
+        "B. Machine-level",
+        "C. High-level",
+        "D. Assembly-level"
+      ],
+      "correct_answer": "C. High-level",
+      "id": 9
+    },
+    {
+      "question": "What does CLR stand for in the .NET framework?",
+      "options": [
+        "A. Common Language Runtime",
+        "B. Central Logic Runtime",
+        "C. Code-Level Runtime",
+        "D. Core Language Runtime"
+      ],
+      "correct_answer": "A. Common Language Runtime",
+      "id": 10
+    },
+    {
+      "question": "Which of the following is NOT a data type in VB.Net?",
+      "options": ["A. Integer", "B. String", "C. CharArray", "D. Boolean"],
+      "correct_answer": "C. CharArray",
+      "id": 11
+    },
+    {
+      "question": "What is the maximum value an Integer can hold in VB.Net?",
+      "options": [
+        "A. 2,147,483,647",
+        "B. 32,767",
+        "C. 1,073,741,824",
+        "D. 4,294,967,295"
+      ],
+      "correct_answer": "A. 2,147,483,647",
+      "id": 12
+    },
+    {
+      "question": "How would you declare a constant value in VB.Net?",
+      "options": [
+        "A. Dim pi = 3.14",
+        "B. Const pi As Double = 3.14",
+        "C. Let pi = 3.14",
+        "D. Static pi As Double = 3.14"
+      ],
+      "correct_answer": "B. Const pi As Double = 3.14",
+      "id": 13
+    },
+    {
+      "question": "What is the default value of a Boolean variable in VB.Net?",
+      "options": ["A. True", "B. False", "C. Null", "D. Undefined"],
+      "correct_answer": "B. False",
+      "id": 14
+    },
+    {
+      "question": "Which operator is used for string concatenation in VB.Net?",
+      "options": ["A. &", "B. +", "C. &&", "D. ++"],
+      "correct_answer": "A. &",
+      "id": 15
+    },
+    {
+      "question": "How do you convert a string to an integer in VB.Net?",
+      "options": [
+        "A. Integer.Parse()",
+        "B. Convert.ToInt32()",
+        "C. Both A and B",
+        "D. None of the above"
+      ],
+      "correct_answer": "C. Both A and B",
+      "id": 16
+    },
+    {
+      "question": "VB.Net uses a keyword to define an array. What is it?",
+      "options": ["A. Define", "B. Dim", "C. Array", "D. Declare"],
+      "correct_answer": "B. Dim",
+      "id": 17
+    },
+    {
+      "question": "What is the difference between `ByVal` and `ByRef` in VB.Net?",
+      "options": [
+        "A. `ByVal` passes value, `ByRef` passes reference",
+        "B. `ByVal` passes reference, `ByRef` passes value",
+        "C. Both are identical",
+        "D. None of the above"
+      ],
+      "correct_answer": "A. `ByVal` passes value, `ByRef` passes reference",
+      "id": 18
+    },
+    {
+      "question": "What will be the output of `Console.WriteLine(2 ^ 3)` in VB.Net?",
+      "options": ["A. 5", "B. 6", "C. 8", "D. None of the above"],
+      "correct_answer": "C. 8",
+      "id": 19
+    },
+    {
+      "question": "A variable in VB.Net that can store multiple values of the same type is called:",
+      "options": ["A. Array", "B. Collection", "C. List", "D. Enumerator"],
+      "correct_answer": "A. Array",
+      "id": 20
+    },
+    {
+      "question": "Which of the following is a valid loop structure in VB.Net?",
+      "options": [
+        "A. For...Next",
+        "B. While...Wend",
+        "C. Do...Loop",
+        "D. All of the above"
+      ],
+      "correct_answer": "D. All of the above",
+      "id": 21
+    },
+    {
+      "question": "Which statement is used for decision-making in VB.Net?",
+      "options": [
+        "A. If...Else",
+        "B. Select...Case",
+        "C. Both A and B",
+        "D. None of the above"
+      ],
+      "correct_answer": "C. Both A and B",
+      "id": 22
+    },
+    {
+      "question": "The syntax to increment a counter in a `For` loop in VB.Net is:",
+      "options": ["A. Step 1", "B. Add 1", "C. += 1", "D. Increment 1"],
+      "correct_answer": "A. Step 1",
+      "id": 23
+    },
+    {
+      "question": "What keyword is used to exit a loop prematurely in VB.Net?",
+      "options": [
+        "A. Exit For",
+        "B. Stop Loop",
+        "C. End Loop",
+        "D. None of the above"
+      ],
+      "correct_answer": "A. Exit For",
+      "id": 24
+    },
+    {
+      "question": "How do you test multiple conditions in a single If statement?",
+      "options": [
+        "A. Use `And` or `Or` operators",
+        "B. Use `+` operator",
+        "C. Use `Combine` keyword",
+        "D. Use `With` keyword"
+      ],
+      "correct_answer": "A. Use `And` or `Or` operators",
+      "id": 25
+    },
+    {
+      "question": "A `Do While` loop is executed:",
+      "options": [
+        "A. At least once",
+        "B. Only if the condition is true",
+        "C. Until the condition becomes false",
+        "D. Both A and C"
+      ],
+      "correct_answer": "B. Only if the condition is true",
+      "id": 26
+    },
+    {
+      "question": "Which loop executes the block of statements at least once, regardless of the condition?",
+      "options": [
+        "A. For Loop",
+        "B. Do...While",
+        "C. Do...Until",
+        "D. While...Wend"
+      ],
+      "correct_answer": "C. Do...Until",
+      "id": 27
+    },
+    {
+      "question": "Which is NOT a control structure in VB.Net?",
+      "options": [
+        "A. If...Else",
+        "B. Switch...Case",
+        "C. While...Loop",
+        "D. Try...Catch"
+      ],
+      "correct_answer": "B. Switch...Case",
+      "id": 28
+    },
+    {
+      "question": "The `Select Case` structure in VB.Net works like a:",
+      "options": [
+        "A. If...Else ladder",
+        "B. For Loop",
+        "C. Array",
+        "D. Function"
+      ],
+      "correct_answer": "A. If...Else ladder",
+      "id": 29
+    },
+    {
+      "question": "How do you specify the end of an `If` block in VB.Net?",
+      "options": ["A. End If", "B. Close If", "C. Exit If", "D. Stop If"],
+      "correct_answer": "A. End If",
+      "id": 30
+    },
+    {
+      "question": "What is an algorithm?",
+      "options": [
+        "A. A programming language",
+        "B. A step-by-step procedure to solve a problem",
+        "C. A flowchart diagram",
+        "D. A hardware device"
+      ],
+      "correct_answer": "B. A step-by-step procedure to solve a problem",
+      "id": 31
+    },
+    {
+      "question": "Which of these properties must an algorithm have?",
+      "options": [
+        "A. Input and Output",
+        "B. Finiteness",
+        "C. Definiteness",
+        "D. All of the above"
+      ],
+      "correct_answer": "D. All of the above",
+      "id": 32
+    },
+    {
+      "question": "Which of the following best describes pseudocode?",
+      "options": [
+        "A. A compiled language",
+        "B. A programming syntax",
+        "C. A plain language representation of an algorithm",
+        "D. An advanced flowchart"
+      ],
+      "correct_answer": "C. A plain language representation of an algorithm",
+      "id": 33
+    },
+    {
+      "question": "What is the primary use of a flowchart in programming?",
+      "options": [
+        "A. To execute code",
+        "B. To graphically represent program logic",
+        "C. To debug errors",
+        "D. To replace algorithms"
+      ],
+      "correct_answer": "B. To graphically represent program logic",
+      "id": 34
+    },
+    {
+      "question": "The diamond symbol in a flowchart represents:",
+      "options": [
+        "A. Start or End",
+        "B. Input/Output",
+        "C. Process",
+        "D. Decision"
+      ],
+      "correct_answer": "D. Decision",
+      "id": 35
+    },
+    {
+      "question": "What is the output of an algorithm?",
+      "options": [
+        "A. The input values",
+        "B. The desired result of the problem",
+        "C. A flowchart",
+        "D. A procedure"
+      ],
+      "correct_answer": "B. The desired result of the problem",
+      "id": 36
+    },
+    {
+      "question": "Pseudocode is NOT:",
+      "options": [
+        "A. Written in plain language",
+        "B. Executable code",
+        "C. Algorithmic in nature",
+        "D. Understandable without syntax knowledge"
+      ],
+      "correct_answer": "B. Executable code",
+      "id": 37
+    },
+    {
+      "question": "Which of the following tools is used for creating flowcharts?",
+      "options": [
+        "A. Microsoft Visio",
+        "B. Python",
+        "C. Adobe Photoshop",
+        "D. HTML"
+      ],
+      "correct_answer": "A. Microsoft Visio",
+      "id": 38
+    },
+    {
+      "question": "What term describes the number of steps or time required for an algorithm to execute?",
+      "options": [
+        "A. Space complexity",
+        "B. Time complexity",
+        "C. Runtime analysis",
+        "D. Performance factor"
+      ],
+      "correct_answer": "B. Time complexity",
+      "id": 39
+    },
+    {
+      "question": "In flowcharts, the rectangle symbol represents a:",
+      "options": [
+        "A. Start/End",
+        "B. Process",
+        "C. Decision",
+        "D. Input/Output"
+      ],
+      "correct_answer": "B. Process",
+      "id": 40
+    },
+    {
+      "question": "The first step in solving a problem algorithmically is:",
+      "options": [
+        "A. Writing pseudocode",
+        "B. Flowchart design",
+        "C. Defining the problem",
+        "D. Programming the solution"
+      ],
+      "correct_answer": "C. Defining the problem",
+      "id": 41
+    },
+    {
+      "question": "An algorithm that uses minimal resources and time is considered:",
+      "options": ["A. Compact", "B. Finite", "C. Efficient", "D. Logical"],
+      "correct_answer": "C. Efficient",
+      "id": 42
+    },
+    {
+      "question": "Which of these is not a benefit of using pseudocode?",
+      "options": [
+        "A. It is easy to understand",
+        "B. It does not depend on a specific programming language",
+        "C. It executes faster than code",
+        "D. It helps to structure algorithms clearly"
+      ],
+      "correct_answer": "C. It executes faster than code",
+      "id": 43
+    },
+    {
+      "question": "The oval symbol in flowcharts represents:",
+      "options": [
+        "A. A decision step",
+        "B. An input/output operation",
+        "C. Start or End",
+        "D. A conditional test"
+      ],
+      "correct_answer": "C. Start or End",
+      "id": 44
+    },
+    {
+      "question": "How are algorithms and flowcharts related?",
+      "options": [
+        "A. Algorithms are graphical representations of flowcharts",
+        "B. Flowcharts are textual descriptions of algorithms",
+        "C. Flowcharts graphically represent algorithms",
+        "D. They are unrelated"
+      ],
+      "correct_answer": "C. Flowcharts graphically represent algorithms",
+      "id": 45
+    },
+    {
+      "question": "What does it mean for an algorithm to have \"finiteness\"?",
+      "options": [
+        "A. It must have input values",
+        "B. It should stop after a certain number of steps",
+        "C. It must always loop infinitely",
+        "D. It must involve decision-making"
+      ],
+      "correct_answer": "B. It should stop after a certain number of steps",
+      "id": 46
+    },
+    {
+      "question": "In pseudocode, which of the following keywords is typically used for loops?",
+      "options": ["A. LOOP UNTIL", "B. WHILE", "C. FOR", "D. All of the above"],
+      "correct_answer": "D. All of the above",
+      "id": 47
+    },
+    {
+      "question": "An example of an algorithm in daily life is:",
+      "options": [
+        "A. Writing code in VB.Net",
+        "B. Cooking a recipe step by step",
+        "C. Browsing the internet",
+        "D. Playing a video game"
+      ],
+      "correct_answer": "B. Cooking a recipe step by step",
+      "id": 48
+    },
+    {
+      "question": "What term is used for representing algorithm logic in plain and simple words?",
+      "options": [
+        "A. Pseudocode",
+        "B. Flowchart",
+        "C. Programming",
+        "D. Debugging"
+      ],
+      "correct_answer": "A. Pseudocode",
+      "id": 49
+    },
+    {
+      "question": "Which of the following best explains the decision-making ability in algorithms?",
+      "options": [
+        "A. Iteration",
+        "B. Conditional branching",
+        "C. Looping",
+        "D. Compilation"
+      ],
+      "correct_answer": "B. Conditional branching",
+      "id": 50
+    },
+    {
+      "question": "How do you declare a function in VB.Net?",
+      "options": [
+        "A. Sub FunctionName()",
+        "B. Function FunctionName()",
+        "C. func FunctionName()",
+        "D. def FunctionName()"
+      ],
+      "correct_answer": "B. Function FunctionName()",
+      "id": 51
+    },
+    {
+      "question": "Which data type in VB.Net is used to store True or False values?",
+      "options": ["A. Boolean", "B. Integer", "C. String", "D. Char"],
+      "correct_answer": "A. Boolean",
+      "id": 52
+    },
+    {
+      "question": "What is the keyword used to create a class in VB.Net?",
+      "options": ["A. Define", "B. Create", "C. Class", "D. Module"],
+      "correct_answer": "C. Class",
+      "id": 53
+    },
+    {
+      "question": "Which of the following is NOT a VB.Net data type?",
+      "options": ["A. String", "B. Decimal", "C. IntegerArray", "D. Double"],
+      "correct_answer": "C. IntegerArray",
+      "id": 54
+    },
+    {
+      "question": "What is the use of the `Try...Catch` block in VB.Net?",
+      "options": [
+        "A. Handling exceptions or errors",
+        "B. Looping through statements",
+        "C. Declaring variables",
+        "D. Creating functions"
+      ],
+      "correct_answer": "A. Handling exceptions or errors",
+      "id": 55
+    },
+    {
+      "question": "Which keyword is used to inherit a base class in VB.Net?",
+      "options": ["A. Implements", "B. Inherits", "C. Extends", "D. Derives"],
+      "correct_answer": "B. Inherits",
+      "id": 56
+    },
+    {
+      "question": "How do you define a property in a VB.Net class?",
+      "options": [
+        "A. Public Property PropertyName As DataType",
+        "B. Define PropertyName As DataType",
+        "C. Let PropertyName As DataType",
+        "D. Class PropertyName As DataType"
+      ],
+      "correct_answer": "A. Public Property PropertyName As DataType",
+      "id": 57
+    },
+    {
+      "question": "Which VB.Net statement is used to read input from the user?",
+      "options": [
+        "A. Console.ReadLine()",
+        "B. Console.Write()",
+        "C. Console.Input()",
+        "D. Read.Input()"
+      ],
+      "correct_answer": "A. Console.ReadLine()",
+      "id": 58
+    },
+    {
+      "question": "What is the purpose of the `Module` keyword in VB.Net?",
+      "options": [
+        "A. It is used to group variables and procedures",
+        "B. It creates a new class",
+        "C. It is used only for arrays",
+        "D. It is for adding libraries"
+      ],
+      "correct_answer": "A. It is used to group variables and procedures",
+      "id": 59
+    },
+    {
+      "question": "Which of the following is used to display output in VB.Net?",
+      "options": [
+        "A. Console.Output()",
+        "B. Console.ReadLine()",
+        "C. Console.WriteLine()",
+        "D. Console.Display()"
+      ],
+      "correct_answer": "C. Console.WriteLine()",
+      "id": 60
+    }
+  ]
+}

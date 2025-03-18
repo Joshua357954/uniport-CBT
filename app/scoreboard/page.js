@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 import { Line } from "react-chartjs-2";
 import Chart from "chart.js/auto"; // Import Chart.js
@@ -131,11 +131,8 @@ const ScoreboardPage = () => {
         >
           <option value="csc280">👨‍💻 Fortran</option>
 
-          {getUser()
-            ?.department.toLowerCase()
-            .trim()
-            .startsWith("computer") && (
-            <option value="csc288">🦾 Pascal</option>
+          {getUser()?.level === "100" && (
+            <option value="vbnet">🦾 Vb.Net</option>
           )}
         </select>
       </div>

@@ -114,6 +114,10 @@ const ProfileModal = ({ onClose }) => {
               {/* <FaBuilding className="text-gray-500 mr-2" /> */}
               <p className="text-gray-500">{department}</p>
             </div>
+            <div className="flex items-center justify-center mt-1 px-1 rounded-md text-center justify-self-center capitalize">
+              {/* <FaBuilding className="text-gray-500 mr-2" /> */}
+              <p className="text-gray-500">Level : {user?.level}</p>
+            </div>
           </div>
         </div>
         <div className="flex justify-center pb-4">
@@ -144,11 +148,11 @@ function home() {
   };
 
   function openSelection() {
-    navigate.push(`/quiz`);
+    navigate.push(`/quiz?course=csc280`);
   }
 
   function openPascal() {
-    // toast('Hope you did well in your Exams 😍');
+    navigate.push(`/quiz?course=vbnet`);
   }
 
   console.log(getUser());
@@ -199,23 +203,22 @@ function home() {
           <h4 className="font-bold text-lg">For You</h4>
 
           <div className="quiz-card-box  h-full">
-            <Card
-              icon={<FaTerminal className="text-yellow-600" />}
-              bg="bg-yellow-100"
-              title="CSC 280 (Fortran)"
-              subtitle="Good number of questions"
-              openSelection={openSelection}
-            />
+            {getUser()?.level === "200" && (
+              <Card
+                icon={<FaTerminal className="text-yellow-600" />}
+                bg="bg-yellow-100"
+                title="CSC 280 (Fortran)"
+                subtitle="Good number of questions"
+                openSelection={openSelection}
+              />
+            )}
 
-            {getUser()
-              ?.department.toLowerCase()
-              .trim()
-              .startsWith("computer") && (
+            {getUser()?.level === "100" && (
               <Card
                 icon={<FaMicrochip className="text-blue-600" />}
                 bg="bg-blue-100"
-                title="CSC 288 (Pascal)"
-                subtitle="Exam Completed ✅🥳"
+                title="Vb.Net"
+                subtitle="Exam Success 🥳"
                 openSelection={openPascal}
               />
             )}
@@ -226,7 +229,7 @@ function home() {
           Made with <span className="text-red-500">&hearts;</span> by <br />
           <b className="text-gray-800">Joshua Boyi</b> &{" "}
           <b className="text-gray-800">Chisom Joseph</b> <br />
-          <i className="text-gray-600">Courtesy: CSC Year 2</i>
+          <i className="text-gray-600">Courtesy: CSC Year 3</i>
         </p>
 
         <div class="absolute bottom-2/4 right-2 text-xs border-2 border-green-500 rounded bg-green-100 p-2">
