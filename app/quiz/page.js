@@ -114,8 +114,17 @@ const QuizScreen = ({ className }) => {
   const navigate = useRouter();
   const [modalVisible, setModalVisible] = useState(false);
   const [loading, setLoading] = useState(true);
-  const searchParams = useSearchParams();
-  const course = searchParams.get("course") || "Loading...";
+  const [course, setCourse] = useState("");
+
+  useEffect(() => {
+    setLoading(true)
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+
+      setCourse(params.get("course") || "Not specified");
+      setLoading(false)
+    }
+  }, []);
 
   const time = 30;
   const numberOfQuestions = 50;
@@ -212,6 +221,10 @@ const QuizScreen = ({ className }) => {
     setModalVisible(false);
     return navigate.push("/", { replace: "/" });
   };
+
+  if (loading){
+    return <LoaderText/>
+  }
 
   return (
     <Suspense fallback={<LoaderText />}>
