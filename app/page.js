@@ -23,7 +23,7 @@ import {
 } from "react-icons/md";
 
 import { TiFlashOutline as FlashIcon } from "react-icons/ti";
-
+import { FiLogOut } from "react-icons/fi";
 import Selection from "./_components/quizSelection.js";
 
 import { FaLaptopCode, FaDatabase, FaCodeBranch } from "react-icons/fa";
@@ -65,13 +65,6 @@ const ProfileModal = ({ onClose }) => {
   const user = getUser();
   const { photoURL, email, department } = user;
 
-  function logOut() {
-    const sure = confirm("Are you sure you want to logout ?");
-    if (sure) {
-      clearUser();
-      window.location.reload();
-    }
-  }
 
   return (
     <div className="fixed inset-0 flex justify-center items-center z-50 bg-gray-800 bg-opacity-70">
@@ -120,15 +113,7 @@ const ProfileModal = ({ onClose }) => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center pb-4">
-          <button
-            onClick={logOut}
-            className="flex items-center bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-600 focus:outline-none"
-          >
-            <FaSignOutAlt className="mr-1" />
-            Logout
-          </button>
-        </div>
+
       </div>
     </div>
   );
@@ -156,6 +141,15 @@ function home() {
   }
 
   console.log(getUser());
+
+  
+  function logOut() {
+    const sure = confirm("Are you sure you want to logout ?");
+    if (sure) {
+      clearUser();
+      window.location.reload();
+    }
+  }
 
   return (
     <>
@@ -199,7 +193,7 @@ function home() {
           </div>
         </header>
 
-        <section className="mt-28 px-5 mb-9 bg-gray-100">
+        <section className="mt-28 px-5 mb-5 bg-gray-100">
           <h4 className="font-bold text-lg">For You</h4>
 
           <div className="quiz-card-box  h-full">
@@ -226,11 +220,22 @@ function home() {
         </section>
 
         <p className="text-center text-sm text-gray-500 px-3 rounded-lg">
-          Made with <span className="text-red-500">&hearts;</span> by <br />
+          Made with <span className="text-red-500 text-xl mb-2">&hearts;</span> by <br />
           <b className="text-gray-800">Joshua Boyi</b> &{" "}
           <b className="text-gray-800">Chisom Joseph</b> <br />
           <i className="text-gray-600">Courtesy: CSC Year 3</i>
         </p>
+
+
+        <div className="flex justify-center pb-4 w-full">
+          <button
+            onClick={logOut}
+            className="flex items-center bg-red-500 text-red-50 px-4 py-2 rounded-md hover:bg-red-400 focus:outline-none"
+          >
+            <FiLogOut className="mr-1" />
+            Logout
+          </button>
+        </div>
 
         <div class="absolute bottom-2/4 right-2 text-xs border-2 border-green-500 rounded bg-green-100 p-2">
           <a
