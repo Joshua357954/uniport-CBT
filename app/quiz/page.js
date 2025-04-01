@@ -117,12 +117,12 @@ const QuizScreen = ({ className }) => {
   const [course, setCourse] = useState("");
 
   useEffect(() => {
-    setLoading(true)
+    setLoading(true);
     if (typeof window !== "undefined") {
       const params = new URLSearchParams(window.location.search);
 
       setCourse(params.get("course") || "Not specified");
-      setLoading(false)
+      setLoading(false);
     }
   }, []);
 
@@ -222,8 +222,8 @@ const QuizScreen = ({ className }) => {
     return navigate.push("/", { replace: "/" });
   };
 
-  if (loading){
-    return <LoaderText/>
+  if (loading) {
+    return <LoaderText />;
   }
 
   return (
@@ -262,7 +262,7 @@ const QuizScreen = ({ className }) => {
                     question={item.question}
                     options={item.options}
                     image={item?.image}
-                    code={item?.code_snippet || ""}
+                    code={item?.code_snippet || item?.code}
                     id={item.id}
                     idx={idx}
                     setAnswers={setAnswers}

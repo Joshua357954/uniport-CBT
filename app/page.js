@@ -15,6 +15,7 @@ import {
   FaQuestionCircle,
   FaTerminal,
   FaWhatsapp,
+  FaWindows,
 } from "react-icons/fa";
 
 import {
@@ -65,7 +66,6 @@ const ProfileModal = ({ onClose }) => {
   const user = getUser();
   const { photoURL, email, department } = user;
 
-
   return (
     <div className="fixed inset-0 flex justify-center items-center z-50 bg-gray-800 bg-opacity-70">
       <div className="bg-white rounded-lg pb-7 overflow-hidden shadow-xl w-80">
@@ -113,7 +113,6 @@ const ProfileModal = ({ onClose }) => {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );
@@ -136,13 +135,16 @@ function home() {
     navigate.push(`/quiz?course=csc280`);
   }
 
+  function openVB2() {
+    navigate.push(`/quiz?course=vbnet2`);
+  }
+
   function openPascal() {
     navigate.push(`/quiz?course=vbnet`);
   }
 
   console.log(getUser());
 
-  
   function logOut() {
     const sure = confirm("Are you sure you want to logout ?");
     if (sure) {
@@ -154,7 +156,7 @@ function home() {
   return (
     <>
       <Selection isOpen={open} onClose={() => setOpen(false)} />
-      <div className="bg-gray-100 sm:w-2/4 mx-auto h-[100vh] flex flex-col gap-y-4 pb-3">
+      <div className="bg-gray-100 sm:w-2/4 mx-auto h-[100vh] flex flex-col gap-y-4 pb-3 w-full">
         <header class="w-full relative h-48 bg-gradient-to-r from-green-600 to-green-300">
           <div className="nav flex  justify-between px-5 items-center mt-5">
             <div>
@@ -202,8 +204,18 @@ function home() {
                 icon={<FaTerminal className="text-yellow-600" />}
                 bg="bg-yellow-100"
                 title="CSC 280 (Fortran)"
-                subtitle="Good number of questions"
+                subtitle="Practice Fortran with lots of Questions"
                 openSelection={openSelection}
+              />
+            )}
+
+            {getUser()?.level === "200" && (
+              <Card
+                icon={<FaWindows className="text-green-600" />}
+                bg="bg-green-100"
+                title="VB.NET (200Lvl)"
+                subtitle="Master VB.NET with Interactive CBT"
+                openSelection={openVB2}
               />
             )}
 
@@ -220,12 +232,12 @@ function home() {
         </section>
 
         <p className="text-center text-sm text-gray-500 px-3 rounded-lg">
-          Made with <span className="text-red-500 text-xl mb-2">&hearts;</span> by <br />
+          Made with <span className="text-red-500 text-xl mb-2">&hearts;</span>{" "}
+          by <br />
           <b className="text-gray-800">Joshua Boyi</b> &{" "}
           <b className="text-gray-800">Chisom Joseph</b> <br />
           <i className="text-gray-600">Courtesy: CSC Year 3</i>
         </p>
-
 
         <div className="flex justify-center pb-4 w-full">
           <button

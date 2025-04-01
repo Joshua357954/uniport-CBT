@@ -1,0 +1,691 @@
+{
+    "questions": [
+      {
+        "question": "What does VB.NET stand for?",
+        "options": [
+          "a) Visual Binary .NET",
+          "b) Visual Basic .NET",
+          "c) Visual Byte .NET",
+          "d) Virtual Basic .NET"
+        ],
+        "correct_answer": "b) Visual Basic .NET",
+        "id": 1
+      },
+      {
+        "question": "Which of the following is the extension of a VB.NET source file?",
+        "options": [
+          "a) .vbs",
+          "b) .vb",
+          "c) .net",
+          "d) .cs"
+        ],
+        "correct_answer": "b) .vb",
+        "id": 2
+      },
+      {
+        "question": "How do you declare multiple variables of the same type in one line?",
+        "options": [
+          "a) Dim x, y, z As Integer",
+          "b) Integer x, y, z",
+          "c) Dim x As Integer, y As Integer, z As Integer",
+          "d) Both a and c"
+        ],
+        "correct_answer": "a) Dim x, y, z As Integer",
+        "code": "Dim x, y, z As Integer",
+        "id": 3
+      },
+      {
+        "question": "What is the purpose of the Option Explicit statement?",
+        "options": [
+          "a) Enables strict type checking",
+          "b) Requires variable declaration",
+          "c) Both a and b",
+          "d) Disables type checking"
+        ],
+        "correct_answer": "c) Both a and b",
+        "id": 4
+      },
+      {
+        "question": "Which of these is NOT a valid VB.NET data type?",
+        "options": [
+          "a) Integer",
+          "b) Double",
+          "c) Character",
+          "d) ByteArray"
+        ],
+        "correct_answer": "d) ByteArray",
+        "id": 5
+      },
+      {
+        "question": "What is the difference between Dim, Static, and Const?",
+        "options": [
+          "a) Dim for variables, Static for procedure-level persistence, Const for constants",
+          "b) Dim for dynamic, Static for fixed, Const for read-only",
+          "c) They are all interchangeable",
+          "d) Dim for public, Static for private, Const for protected"
+        ],
+        "correct_answer": "a) Dim for variables, Static for procedure-level persistence, Const for constants",
+        "id": 6
+      },
+      {
+        "question": "How do you create a single-line comment in VB.NET?",
+        "options": [
+          "a) // Comment",
+          "b) /* Comment */",
+          "c) ' Comment",
+          "d) # Comment"
+        ],
+        "correct_answer": "c) ' Comment",
+        "code": "' This is a comment",
+        "id": 7
+      },
+      {
+        "question": "What does the MsgBox function do?",
+        "options": [
+          "a) Creates a message box",
+          "b) Displays a dialog with message",
+          "c) Both a and b",
+          "d) Only logs messages"
+        ],
+        "correct_answer": "c) Both a and b",
+        "code": "MsgBox(\"Hello, World!\")",
+        "id": 8
+      },
+      {
+        "question": "What are modules in VB.NET?",
+        "options": [
+          "a) Containers for global procedures/variables",
+          "b) Similar to classes but don't need instantiation",
+          "c) Both a and b",
+          "d) Only for database operations"
+        ],
+        "correct_answer": "c) Both a and b",
+        "id": 9
+      },
+      {
+        "question": "What is the purpose of the Imports statement?",
+        "options": [
+          "a) To include namespaces",
+          "b) To avoid full namespace qualification",
+          "c) Both a and b",
+          "d) To import DLLs"
+        ],
+        "correct_answer": "c) Both a and b",
+        "code": "Imports System.Data",
+        "id": 10
+      },
+      {
+        "question": "What is the difference between ByVal and ByRef?",
+        "options": [
+          "a) ByVal passes value, ByRef passes reference",
+          "b) ByRef modifies original, ByVal doesn't",
+          "c) Both a and b",
+          "d) ByVal is faster than ByRef"
+        ],
+        "correct_answer": "c) Both a and b",
+        "id": 11
+      },
+      {
+        "question": "When should you use a Structure instead of a Class?",
+        "options": [
+          "a) For small, simple objects",
+          "b) When you need value semantics",
+          "c) When inheritance isn't needed",
+          "d) All of the above"
+        ],
+        "correct_answer": "d) All of the above",
+        "id": 12
+      },
+      {
+        "question": "What is the correct Try-Catch-Finally syntax?",
+        "options": [
+          "a) Try { } catch { } finally { }",
+          "b) Try ... Catch ... End Try",
+          "c) Try ... Catch ... Finally ... End Try",
+          "d) Try ... Except ... Finally"
+        ],
+        "correct_answer": "c) Try ... Catch ... Finally ... End Try",
+        "code": "Try\n    ' Code\nCatch ex As Exception\n    ' Handle error\nFinally\n    ' Cleanup\nEnd Try",
+        "id": 13
+      },
+      {
+        "question": "What is the scope of Friend access modifier?",
+        "options": [
+          "a) Current assembly",
+          "b) Same namespace",
+          "c) Derived classes only",
+          "d) Global"
+        ],
+        "correct_answer": "a) Current assembly",
+        "id": 14
+      },
+      {
+        "question": "How do you define a property with getter and setter?",
+        "options": [
+          "a) Using Property keyword",
+          "b) With Get and Set blocks",
+          "c) Both a and b",
+          "d) Using Function and Sub"
+        ],
+        "correct_answer": "c) Both a and b",
+        "code": "Private _name As String\nPublic Property Name As String\n    Get\n        Return _name\n    End Get\n    Set(value As String)\n        _name = value\n    End Set\nEnd Property",
+        "id": 15
+      },
+      {
+        "question": "What does the Me keyword refer to?",
+        "options": [
+          "a) Current class instance",
+          "b) Parent class",
+          "c) Base class",
+          "d) Current namespace"
+        ],
+        "correct_answer": "a) Current class instance",
+        "id": 16
+      },
+      {
+        "question": "What's the difference between Function and Sub?",
+        "options": [
+          "a) Function returns value, Sub doesn't",
+          "b) Sub can't take parameters",
+          "c) Function must have return type",
+          "d) Both a and c"
+        ],
+        "correct_answer": "d) Both a and c",
+        "code": "Function Add(a As Integer, b As Integer) As Integer\n    Return a + b\nEnd Function\n\nSub Show(msg As String)\n    Console.WriteLine(msg)\nEnd Sub",
+        "id": 17
+      },
+      {
+        "question": "How do you declare an array of 10 integers?",
+        "options": [
+          "a) Dim arr(9) As Integer",
+          "b) Dim arr(10) As Integer",
+          "c) Integer[] arr = new Integer[10]",
+          "d) Array arr As Integer(10)"
+        ],
+        "correct_answer": "a) Dim arr(9) As Integer",
+        "code": "Dim numbers(9) As Integer ' Indexes 0-9",
+        "id": 18
+      },
+      {
+        "question": "What's the difference between For and For Each?",
+        "options": [
+          "a) For uses counter, For Each iterates collections",
+          "b) For Each is only for arrays",
+          "c) For is faster than For Each",
+          "d) No difference"
+        ],
+        "correct_answer": "a) For uses counter, For Each iterates collections",
+        "code": "For Each item In myList\n    Console.WriteLine(item)\nNext\n\nFor i As Integer = 0 To 9\n    Console.WriteLine(i)\nNext",
+        "id": 19
+      },
+      {
+        "question": "How do you connect to SQL Server?",
+        "options": [
+          "a) Using SqlConnection",
+          "b) With connection string",
+          "c) Both a and b",
+          "d) Using MySQLConnection"
+        ],
+        "correct_answer": "c) Both a and b",
+        "code": "Dim conn As New SqlConnection(\"Server=myServer;Database=myDB;User Id=myUser;Password=myPass;\")",
+        "id": 20
+      },
+      {
+        "question": "What are the four pillars of OOP in VB.NET?",
+        "options": [
+          "a) Inheritance, Polymorphism, Abstraction, Encapsulation",
+          "b) Classes, Objects, Methods, Properties",
+          "c) Public, Private, Protected, Friend",
+          "d) Dim, Sub, Function, Class"
+        ],
+        "correct_answer": "a) Inheritance, Polymorphism, Abstraction, Encapsulation",
+        "id": 21
+      },
+      {
+        "question": "What is polymorphism in VB.NET?",
+        "options": [
+          "a) Same method name with different implementations",
+          "b) Method overriding",
+          "c) Both a and b",
+          "d) Only method overloading"
+        ],
+        "correct_answer": "c) Both a and b",
+        "id": 22
+      },
+      {
+        "question": "Difference between abstract classes and interfaces?",
+        "options": [
+          "a) Abstract can have implementation, interfaces can't",
+          "b) Class can inherit one abstract class but multiple interfaces",
+          "c) Both a and b",
+          "d) No difference"
+        ],
+        "correct_answer": "c) Both a and b",
+        "id": 23
+      },
+      {
+        "question": "How do you create a thread?",
+        "options": [
+          "a) New Thread(AddressOf Method)",
+          "b) Thread.Start()",
+          "c) Both a and b",
+          "d) Using Task.Run() only"
+        ],
+        "correct_answer": "c) Both a and b",
+        "code": "Dim t As New Thread(AddressOf MyMethod)\nt.Start()",
+        "id": 24
+      },
+      {
+        "question": "What are delegates in VB.NET?",
+        "options": [
+          "a) Type-safe function pointers",
+          "b) References to methods",
+          "c) Both a and b",
+          "d) Only for events"
+        ],
+        "correct_answer": "c) Both a and b",
+        "id": 25
+      },
+      {
+        "question": "How does garbage collection work?",
+        "options": [
+          "a) Automatically reclaims unused memory",
+          "b) Manages object lifetime",
+          "c) Both a and b",
+          "d) Only works with Using statement"
+        ],
+        "correct_answer": "c) Both a and b",
+        "id": 26
+      },
+      {
+        "question": "When should you use the Using statement?",
+        "options": [
+          "a) For IDisposable objects",
+          "b) To ensure proper cleanup",
+          "c) Both a and b",
+          "d) Only for database connections"
+        ],
+        "correct_answer": "c) Both a and b",
+        "code": "Using conn As New SqlConnection(connString)\n    conn.Open()\nEnd Using",
+        "id": 27
+      },
+      {
+        "question": "What is a lambda expression?",
+        "options": [
+          "a) Anonymous function",
+          "b) Inline delegate",
+          "c) Both a and b",
+          "d) Only for LINQ"
+        ],
+        "correct_answer": "c) Both a and b",
+        "code": "Dim square = Function(x As Integer) x * x",
+        "id": 28
+      },
+      {
+        "question": "How do you create a Windows Forms app?",
+        "options": [
+          "a) New Windows Forms Project",
+          "b) Add forms and controls",
+          "c) Both a and b",
+          "d) Only through code"
+        ],
+        "correct_answer": "c) Both a and b",
+        "id": 29
+      },
+      {
+        "question": "What is the My namespace for?",
+        "options": [
+          "a) Simplified access to common features",
+          "b) Application, Computer, User objects",
+          "c) Both a and b",
+          "d) Only for settings"
+        ],
+        "correct_answer": "c) Both a and b",
+        "id": 30
+      },
+      {
+        "question": "Which is NOT a control structure?",
+        "options": [
+          "a) If-Else",
+          "b) For",
+          "c) Try-Catch",
+          "d) Compilation"
+        ],
+        "correct_answer": "d) Compilation",
+        "id": 31
+      },
+      {
+        "question": "Which loop guarantees at least one execution?",
+        "options": [
+          "a) For",
+          "b) Do While",
+          "c) Do Until",
+          "d) Both b and c"
+        ],
+        "correct_answer": "d) Both b and c",
+        "id": 32
+      },
+      {
+        "question": "How do you exit a loop immediately?",
+        "options": [
+          "a) Exit For",
+          "b) Exit Do",
+          "c) Both a and b",
+          "d) Stop"
+        ],
+        "correct_answer": "c) Both a and b",
+        "id": 33
+      },
+      {
+        "question": "What is Select Case used for?",
+        "options": [
+          "a) Multiple condition checks",
+          "b) Cleaner than nested Ifs",
+          "c) Both a and b",
+          "d) Only for enums"
+        ],
+        "correct_answer": "c) Both a and b",
+        "code": "Select Case value\n    Case 1\n        ' Do something\n    Case 2\n        ' Do something else\nEnd Select",
+        "id": 34
+      },
+      {
+        "question": "How do you skip to next iteration?",
+        "options": [
+          "a) Continue",
+          "b) Skip",
+          "c) Next",
+          "d) Jump"
+        ],
+        "correct_answer": "a) Continue",
+        "id": 35
+      },
+      {
+        "question": "What is an array?",
+        "options": [
+          "a) Contiguous memory locations",
+          "b) Fixed-size collection",
+          "c) Both a and b",
+          "d) Only for numbers"
+        ],
+        "correct_answer": "c) Both a and b",
+        "id": 36
+      },
+      {
+        "question": "How do you initialize an array?",
+        "options": [
+          "a) Dim arr() As Integer = {1, 2, 3}",
+          "b) Dim arr As Integer() = New Integer() {1, 2, 3}",
+          "c) Both a and b",
+          "d) Only with New keyword"
+        ],
+        "correct_answer": "c) Both a and b",
+        "code": "Dim numbers() As Integer = {1, 2, 3, 4, 5}",
+        "id": 37
+      },
+      {
+        "question": "How do you resize an array?",
+        "options": [
+          "a) ReDim",
+          "b) ReDim Preserve",
+          "c) Both a and b",
+          "d) Arrays can't be resized"
+        ],
+        "correct_answer": "c) Both a and b",
+        "code": "ReDim Preserve myArray(10)",
+        "id": 38
+      },
+      {
+        "question": "What is a jagged array?",
+        "options": [
+          "a) Array of arrays",
+          "b) Each element can be different size",
+          "c) Both a and b",
+          "d) Only 2D arrays"
+        ],
+        "correct_answer": "c) Both a and b",
+        "code": "Dim jagged()() As Integer = {New Integer() {1}, New Integer() {2,3}}",
+        "id": 39
+      },
+      {
+        "question": "What namespace contains collections?",
+        "options": [
+          "a) System.Collections",
+          "b) System.Collections.Generic",
+          "c) Both a and b",
+          "d) System.Data"
+        ],
+        "correct_answer": "c) Both a and b",
+        "id": 40
+      },
+      {
+        "question": "Which follows LIFO order?",
+        "options": [
+          "a) Queue",
+          "b) Stack",
+          "c) List",
+          "d) Array"
+        ],
+        "correct_answer": "b) Stack",
+        "id": 41
+      },
+      {
+        "question": "How do you add to an ArrayList?",
+        "options": [
+          "a) Add()",
+          "b) Push()",
+          "c) Insert()",
+          "d) Both a and c"
+        ],
+        "correct_answer": "d) Both a and c",
+        "code": "Dim list As New ArrayList()\nlist.Add(\"Item\")",
+        "id": 42
+      },
+      {
+        "question": "What is List(Of T)?",
+        "options": [
+          "a) Generic collection",
+          "b) Type-safe list",
+          "c) Both a and b",
+          "d) Legacy collection"
+        ],
+        "correct_answer": "c) Both a and b",
+        "code": "Dim names As New List(Of String)\nnames.Add(\"Alice\")",
+        "id": 43
+      },
+      {
+        "question": "Queue vs Stack?",
+        "options": [
+          "a) Queue FIFO, Stack LIFO",
+          "b) Stack FIFO, Queue LIFO",
+          "c) No difference",
+          "d) Only Stack allows access"
+        ],
+        "correct_answer": "a) Queue FIFO, Stack LIFO",
+        "id": 44
+      },
+      {
+        "question": "How check key in Dictionary?",
+        "options": [
+          "a) ContainsKey",
+          "b) HasKey",
+          "c) Exists",
+          "d) Find"
+        ],
+        "correct_answer": "a) ContainsKey",
+        "code": "If myDict.ContainsKey(\"name\") Then",
+        "id": 45
+      },
+      {
+        "question": "Function vs Sub?",
+        "options": [
+          "a) Function returns value",
+          "b) Sub doesn't return",
+          "c) Both a and b",
+          "d) No difference"
+        ],
+        "correct_answer": "c) Both a and b",
+        "id": 46
+      },
+      {
+        "question": "How specify return type?",
+        "options": [
+          "a) Function Name() As Type",
+          "b) As Type after parameters",
+          "c) Both a and b",
+          "d) Only in Sub"
+        ],
+        "correct_answer": "c) Both a and b",
+        "code": "Function Add(a As Integer, b As Integer) As Integer",
+        "id": 47
+      },
+      {
+        "question": "How return from Function?",
+        "options": [
+          "a) Return statement",
+          "b) FunctionName = value",
+          "c) Both a and b",
+          "d) Exit Function"
+        ],
+        "correct_answer": "a) Return statement",
+        "code": "Return result",
+        "id": 48
+      },
+      {
+        "question": "Can Sub return value?",
+        "options": [
+          "a) No",
+          "b) Yes with Return",
+          "c) Yes with Exit Sub",
+          "d) Only if marked"
+        ],
+        "correct_answer": "a) No",
+        "id": 49
+      },
+      {
+        "question": "Write a Function to add two numbers",
+        "options": [
+          "a) Function Add(a,b) Return a+b",
+          "b) Function Add(a,b) As Integer Return a+b",
+          "c) Both a and b",
+          "d) Only with explicit types"
+        ],
+        "correct_answer": "b) Function Add(a As Integer, b As Integer) As Integer\n    Return a + b\nEnd Function",
+        "code": "Function Add(a As Integer, b As Integer) As Integer\n    Return a + b\nEnd Function",
+        "id": 50
+      },
+      {
+        "question": "How call a Sub?",
+        "options": [
+          "a) SubName()",
+          "b) Call SubName()",
+          "c) Both a and b",
+          "d) Only with Call"
+        ],
+        "correct_answer": "c) Both a and b",
+        "code": "ShowMessage(\"Hello\")\n' Or:\nCall ShowMessage(\"Hello\")",
+        "id": 51
+      },
+      {
+        "question": "Optional parameters?",
+        "options": [
+          "a) Function Calc(a, Optional b=0)",
+          "b) Must have default value",
+          "c) Both a and b",
+          "d) Only in C#"
+        ],
+        "correct_answer": "c) Both a and b",
+        "code": "Function Multiply(a As Integer, Optional b As Integer = 1) As Integer",
+        "id": 52
+      },
+      {
+        "question": "Default return type if unspecified?",
+        "options": [
+          "a) Object",
+          "b) Integer",
+          "c) String",
+          "d) Void"
+        ],
+        "correct_answer": "a) Object",
+        "id": 53
+      },
+      {
+        "question": "What is ADO.NET used for?",
+        "options": [
+          "a) Database access",
+          "b) Data operations",
+          "c) Both a and b",
+          "d) Only SQL Server"
+        ],
+        "correct_answer": "c) Both a and b",
+        "id": 54
+      },
+      {
+        "question": "Which namespace for databases?",
+        "options": [
+          "a) System.Data",
+          "b) System.Data.SqlClient",
+          "c) Both a and b",
+          "d) System.DB"
+        ],
+        "correct_answer": "c) Both a and b",
+        "id": 55
+      },
+      {
+        "question": "SQL query to retrieve data?",
+        "options": [
+          "a) SELECT",
+          "b) GET",
+          "c) FETCH",
+          "d) READ"
+        ],
+        "correct_answer": "a) SELECT",
+        "id": 56
+      },
+      {
+        "question": "What does Dispose do?",
+        "options": [
+          "a) Releases unmanaged resources",
+          "b) Cleans up objects",
+          "c) Both a and b",
+          "d) Only closes files"
+        ],
+        "correct_answer": "c) Both a and b",
+        "id": 57
+      },
+      {
+        "question": "What is LINQ for?",
+        "options": [
+          "a) Querying data",
+          "b) Unified data access",
+          "c) Both a and b",
+          "d) Only databases"
+        ],
+        "correct_answer": "c) Both a and b",
+        "code": "Dim query = From p In people Where p.Age > 18 Select p",
+        "id": 58
+      },
+      {
+        "question": "How create Windows Forms button click handler?",
+        "options": [
+          "a) Double-click button in designer",
+          "b) Handles Button.Click",
+          "c) Both a and b",
+          "d) Only in code"
+        ],
+        "correct_answer": "c) Both a and b",
+        "code": "Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click",
+        "id": 59
+      },
+      {
+        "question": "What does My.Computer provide?",
+        "options": [
+          "a) System information",
+          "b) File system access",
+          "c) Both a and b",
+          "d) Only registry access"
+        ],
+        "correct_answer": "c) Both a and b",
+        "id": 60
+      }
+    ]
+  }
