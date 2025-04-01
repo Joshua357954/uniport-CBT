@@ -130,7 +130,12 @@ const ScoreboardPage = () => {
           onChange={handleChange}
         >
           <option value="csc280">👨‍💻 Fortran</option>
-
+          {getUser()?.level === "200" && (
+            <option value="vbnet2">🦾 Vb.Net 2</option>
+          )}
+          {getUser()?.level === "200" && (
+            <option value="python">🐍 Python</option>
+          )}
           {getUser()?.level === "100" && (
             <option value="vbnet">🦾 Vb.Net</option>
           )}

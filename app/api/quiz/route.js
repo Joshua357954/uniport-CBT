@@ -1,8 +1,9 @@
 import CSC280 from './csc280.json';
 import vbnet from './vbnet.json'
 import vbnet2 from './vbnet2.json'
+import python from './python.json'
 
-const quizData = { 'csc280': CSC280, 'vbnet': vbnet, 'vbnet2': vbnet2  };
+const quizData = { 'csc280': CSC280, 'vbnet': vbnet, 'vbnet2': vbnet2,'python': python  };
 
 function shuffleArray(array) {
   const shuffledArray = [...array];

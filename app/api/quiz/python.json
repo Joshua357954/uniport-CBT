@@ -1,0 +1,551 @@
+{
+  "questions": [
+    {
+      "question": "What is the primary characteristic of an algorithm?",
+      "options": [
+        "a) Infinite sequence of instructions",
+        "b) Finite sequence of problem-solving steps",
+        "c) Only works for mathematical problems",
+        "d) Requires no input"
+      ],
+      "correct_answer": "b) Finite sequence of problem-solving steps",
+      "id": 1
+    },
+    {
+      "question": "Which symbol is used to represent the start/end in a flowchart?",
+      "options": ["a) Rectangle", "b) Diamond", "c) Oval", "d) Arrow"],
+      "correct_answer": "c) Oval",
+      "id": 2
+    },
+    {
+      "question": "In Python, which keyword defines a function?",
+      "options": ["a) function", "b) def", "c) lambda", "d) return"],
+      "correct_answer": "b) def",
+      "id": 3,
+      "code": "def my_function():"
+    },
+    {
+      "question": "What does OOP's 'polymorphism' enable?",
+      "options": [
+        "a) Data hiding",
+        "b) Multitasking with the same interface",
+        "c) Memory management",
+        "d) Code compilation"
+      ],
+      "correct_answer": "b) Multitasking with the same interface",
+      "id": 4
+    },
+    {
+      "question": "Which operator is used for exponentiation in Python?",
+      "options": ["a) ^", "b) **", "c) //", "d) %%"],
+      "correct_answer": "b) **",
+      "id": 5,
+      "code": "x = 2 ** 3  # Result: 8"
+    },
+    {
+      "question": "What is the purpose of exception handling?",
+      "options": [
+        "a) To prevent all errors",
+        "b) To gracefully manage runtime errors",
+        "c) To speed up program execution",
+        "d) To replace comments"
+      ],
+      "correct_answer": "b) To gracefully manage runtime errors",
+      "id": 6
+    },
+    {
+      "question": "Which data type would store the value 3.14?",
+      "options": [
+        "a) Integer",
+        "b) Boolean",
+        "c) Floating Point",
+        "d) Character"
+      ],
+      "correct_answer": "c) Floating Point",
+      "id": 7
+    },
+    {
+      "question": "What is the output of this Python code?",
+      "options": ["a) 5", "b) 10", "c) 15", "d) Error"],
+      "correct_answer": "c) 15",
+      "id": 8,
+      "code": "a = 5\nb = 10\nprint(a + b)"
+    },
+    {
+      "question": "In event handling, what is 'propagation'?",
+      "options": [
+        "a) Creating new events",
+        "b) Routing events to handlers",
+        "c) Deleting events",
+        "d) Debugging events"
+      ],
+      "correct_answer": "b) Routing events to handlers",
+      "id": 9
+    },
+    {
+      "question": "Which paradigm focuses on 'pure functions'?",
+      "options": [
+        "a) Procedural",
+        "b) Object-Oriented",
+        "c) Functional",
+        "d) Event-Driven"
+      ],
+      "correct_answer": "c) Functional",
+      "id": 10
+    },
+    {
+      "question": "What is the correct way to comment multiple lines in Python?",
+      "options": [
+        "a) // Comment //",
+        "b) /* Comment */",
+        "c) ''' Comment '''",
+        "d) # Comment #"
+      ],
+      "correct_answer": "c) ''' Comment '''",
+      "id": 11,
+      "code": "'''\nThis is a\nmulti-line comment\n'''"
+    },
+    {
+      "question": "Which of these is NOT a Python data type?",
+      "options": ["a) tuple", "b) array", "c) float", "d) complex"],
+      "correct_answer": "b) array",
+      "id": 12
+    },
+    {
+      "question": "What does this flowchart symbol represent: ⬢?",
+      "options": [
+        "a) Start/End",
+        "b) Process",
+        "c) Decision",
+        "d) Input/Output"
+      ],
+      "correct_answer": "c) Decision",
+      "id": 13
+    },
+    {
+      "question": "In FORTRAN, how are parameters passed by default?",
+      "options": [
+        "a) By value",
+        "b) By reference",
+        "c) By copy",
+        "d) By pointer"
+      ],
+      "correct_answer": "b) By reference",
+      "id": 14
+    },
+    {
+      "question": "Which operator gives the remainder of division?",
+      "options": ["a) /", "b) %", "c) //", "d) *"],
+      "correct_answer": "b) %",
+      "id": 15,
+      "code": "remainder = 5 % 2  # Returns 1"
+    },
+    {
+      "question": "What is the output of this code?",
+      "options": ["a) True", "b) False", "c) Error", "d) None"],
+      "correct_answer": "a) True",
+      "id": 16,
+      "code": "x = (5 > 3)\nprint(x)"
+    },
+    {
+      "question": "Which language uses 'Result' to return function values?",
+      "options": ["a) Python", "b) Java", "c) FORTRAN", "d) C++"],
+      "correct_answer": "c) FORTRAN",
+      "id": 17
+    },
+    {
+      "question": "What is event bubbling?",
+      "options": [
+        "a) Creating multiple events",
+        "b) Events propagating inward to outward",
+        "c) Events propagating outward to inward",
+        "d) Deleting events"
+      ],
+      "correct_answer": "c) Events propagating outward to inward",
+      "id": 18
+    },
+    {
+      "question": "Which is a valid Python variable name?",
+      "options": ["a) 2var", "b) _var", "c) var-name", "d) break"],
+      "correct_answer": "b) _var",
+      "id": 19
+    },
+    {
+      "question": "What does OOP's 'encapsulation' achieve?",
+      "options": [
+        "a) Code reusability",
+        "b) Data security",
+        "c) Multitasking",
+        "d) Faster execution"
+      ],
+      "correct_answer": "b) Data security",
+      "id": 20
+    },
+    {
+      "question": "Which is NOT a control structure?",
+      "options": ["a) Sequence", "b) Selection", "c) Loop", "d) Exception"],
+      "correct_answer": "d) Exception",
+      "id": 21
+    },
+    {
+      "question": "What will this code output?",
+      "options": ["a) 0", "b) 1", "c) 5", "d) 6"],
+      "correct_answer": "d) 6",
+      "id": 22,
+      "code": "x = 5\nx += 1\nprint(x)"
+    },
+    {
+      "question": "Which is a Python immutable data type?",
+      "options": ["a) List", "b) Dictionary", "c) Tuple", "d) Set"],
+      "correct_answer": "c) Tuple",
+      "id": 23
+    },
+    {
+      "question": "What is the purpose of a 'finally' block?",
+      "options": [
+        "a) To handle errors",
+        "b) To execute code regardless of exceptions",
+        "c) To skip code execution",
+        "d) To terminate the program"
+      ],
+      "correct_answer": "b) To execute code regardless of exceptions",
+      "id": 24
+    },
+    {
+      "question": "Which language is closest to machine code?",
+      "options": ["a) Python", "b) Assembly", "c) Java", "d) FORTRAN"],
+      "correct_answer": "b) Assembly",
+      "id": 25
+    },
+    {
+      "question": "What does the 'continue' statement do?",
+      "options": [
+        "a) Exits the loop",
+        "b) Skips current iteration",
+        "c) Restarts the program",
+        "d) Handles exceptions"
+      ],
+      "correct_answer": "b) Skips current iteration",
+      "id": 26
+    },
+    {
+      "question": "Which is a valid tuple declaration?",
+      "options": [
+        "a) t = [1, 2, 3]",
+        "b) t = (1, 2, 3)",
+        "c) t = {1, 2, 3}",
+        "d) t = '1,2,3'"
+      ],
+      "correct_answer": "b) t = (1, 2, 3)",
+      "id": 27,
+      "code": "coordinates = (3, 5)"
+    },
+    {
+      "question": "What is the output of this code?",
+      "options": ["a) 0", "b) 1", "c) 4", "d) Error"],
+      "correct_answer": "c) 4",
+      "id": 28,
+      "code": "nums = [1, 2, 3, 4]\nprint(len(nums))"
+    },
+    {
+      "question": "Which is NOT an OOP concept?",
+      "options": [
+        "a) Inheritance",
+        "b) Polymorphism",
+        "c) Compilation",
+        "d) Encapsulation"
+      ],
+      "correct_answer": "c) Compilation",
+      "id": 29
+    },
+    {
+      "question": "What does this comparison return?",
+      "options": ["a) True", "b) False", "c) Maybe", "d) Error"],
+      "correct_answer": "a) True",
+      "id": 30,
+      "code": "result = (10 >= 5)"
+    },
+    {
+      "question": "Which is used for logical AND in Python?",
+      "options": ["a) &", "b) &&", "c) and", "d) AND"],
+      "correct_answer": "c) and",
+      "id": 31
+    },
+    {
+      "question": "What is the output of this code?",
+      "options": ["a) 1", "b) 2", "c) 3", "d) 4"],
+      "correct_answer": "b) 2",
+      "id": 32,
+      "code": "x = 5\nprint(x // 2)"
+    },
+    {
+      "question": "Which is a Python mutable data type?",
+      "options": ["a) String", "b) Integer", "c) List", "d) Tuple"],
+      "correct_answer": "c) List",
+      "id": 33
+    },
+    {
+      "question": "What does 'def' stand for in Python?",
+      "options": ["a) Define", "b) Definition", "c) Defer", "d) Default"],
+      "correct_answer": "a) Define",
+      "id": 34
+    },
+    {
+      "question": "Which is NOT a Python loop?",
+      "options": ["a) for", "b) while", "c) do-while", "d) until"],
+      "correct_answer": "d) until",
+      "id": 35
+    },
+    {
+      "question": "What is the output of this code?",
+      "options": ["a) 0", "b) 1", "c) 2", "d) 3"],
+      "correct_answer": "b) 1",
+      "id": 36,
+      "code": "x = True\ny = False\nprint(int(x) + int(y))"
+    },
+    {
+      "question": "Which is used to exit a loop prematurely?",
+      "options": ["a) stop", "b) exit", "c) break", "d) return"],
+      "correct_answer": "c) break",
+      "id": 37
+    },
+    {
+      "question": "What is the output of this code?",
+      "options": ["a) 1", "b) 2", "c) 3", "d) 4"],
+      "correct_answer": "a) 1",
+      "id": 38,
+      "code": "nums = [1, 2, 3]\nprint(nums[0])"
+    },
+    {
+      "question": "Which is NOT a valid Python numeric type?",
+      "options": ["a) int", "b) float", "c) double", "d) complex"],
+      "correct_answer": "c) double",
+      "id": 39
+    },
+    {
+      "question": "What does 'OOP' stand for?",
+      "options": [
+        "a) Object-Oriented Programming",
+        "b) Operational Output Protocol",
+        "c) Optimized Operation Process",
+        "d) Organized Output Procedure"
+      ],
+      "correct_answer": "a) Object-Oriented Programming",
+      "id": 40
+    },
+    {
+      "question": "Which symbol is used for comments in Python?",
+      "options": ["a) //", "b) #", "c) --", "d) /*"],
+      "correct_answer": "b) #",
+      "id": 41,
+      "code": "# This is a comment"
+    },
+    {
+      "question": "What is the output of this code?",
+      "options": ["a) 0", "b) 5", "c) 10", "d) 15"],
+      "correct_answer": "b) 5",
+      "id": 42,
+      "code": "x = 10\nif x > 5:\n    print(5)"
+    },
+    {
+      "question": "Which is a valid Python string declaration?",
+      "options": [
+        "a) s = 'hello'",
+        "b) s = \"hello\"",
+        "c) s = '''hello'''",
+        "d) All of the above"
+      ],
+      "correct_answer": "d) All of the above",
+      "id": 43
+    },
+    {
+      "question": "What is the output of this code?",
+      "options": ["a) 0", "b) 1", "c) 2", "d) 3"],
+      "correct_answer": "d) 3",
+      "id": 44,
+      "code": "x = 'abc'\nprint(len(x))"
+    },
+    {
+      "question": "Which is NOT a Python comparison operator?",
+      "options": ["a) ==", "b) !=", "c) <>", "d) >="],
+      "correct_answer": "c) <>",
+      "id": 45
+    },
+    {
+      "question": "What is the output of this code?",
+      "options": ["a) 0", "b) 1", "c) 2", "d) 3"],
+      "correct_answer": "b) 1",
+      "id": 46,
+      "code": "x = [1, 2, 3]\nprint(x.count(1))"
+    },
+    {
+      "question": "Which is used to handle exceptions in Python?",
+      "options": ["a) try", "b) catch", "c) handle", "d) recover"],
+      "correct_answer": "a) try",
+      "id": 47
+    },
+    {
+      "question": "What is the output of this code?",
+      "options": ["a) 0", "b) 1", "c) 2", "d) 3"],
+      "correct_answer": "c) 2",
+      "id": 48,
+      "code": "x = [1, 2, 3]\nprint(x[1])"
+    },
+    {
+      "question": "Which is NOT a Python logical operator?",
+      "options": ["a) and", "b) or", "c) not", "d) xor"],
+      "correct_answer": "d) xor",
+      "id": 49
+    },
+    {
+      "question": "What is the output of this code?",
+      "options": ["a) 0", "b) 1", "c) 2", "d) 3"],
+      "correct_answer": "a) 0",
+      "id": 50,
+      "code": "x = False\ny = False\nprint(int(x or y))"
+    },
+    {
+      "question": "Which is used to define a class in Python?",
+      "options": ["a) class", "b) def", "c) struct", "d) object"],
+      "correct_answer": "a) class",
+      "id": 51,
+      "code": "class MyClass:"
+    },
+    {
+      "question": "What is the output of this code?",
+      "options": ["a) 0", "b) 1", "c) 2", "d) 3"],
+      "correct_answer": "b) 1",
+      "id": 52,
+      "code": "x = [1, 2, 3]\nprint(min(x))"
+    },
+    {
+      "question": "Which is NOT a Python data structure?",
+      "options": ["a) list", "b) tuple", "c) array", "d) dictionary"],
+      "correct_answer": "c) array",
+      "id": 53
+    },
+    {
+      "question": "What is the output of this code?",
+      "options": ["a) 0", "b) 1", "c) 2", "d) 3"],
+      "correct_answer": "d) 3",
+      "id": 54,
+      "code": "x = [1, 2, 3]\nprint(max(x))"
+    },
+    {
+      "question": "Which is used to import modules in Python?",
+      "options": ["a) include", "b) import", "c) require", "d) using"],
+      "correct_answer": "b) import",
+      "id": 55,
+      "code": "import math"
+    },
+    {
+      "question": "What is the output of this code?",
+      "options": ["a) 0", "b) 1", "c) 2", "d) 3"],
+      "correct_answer": "c) 2",
+      "id": 56,
+      "code": "x = [1, 2, 3]\nprint(x.index(2))"
+    },
+    {
+      "question": "Which is NOT a Python built-in function?",
+      "options": ["a) print()", "b) input()", "c) output()", "d) len()"],
+      "correct_answer": "c) output()",
+      "id": 57
+    },
+    {
+      "question": "What is the output of this code?",
+      "options": ["a) 0", "b) 1", "c) 2", "d) 3"],
+      "correct_answer": "a) 0",
+      "id": 58,
+      "code": "x = [1, 2, 3]\nprint(x.count(4))"
+    },
+    {
+      "question": "Which is used to reverse a list in Python?",
+      "options": ["a) reverse()", "b) flip()", "c) invert()", "d) backwards()"],
+      "correct_answer": "a) reverse()",
+      "id": 59,
+      "code": "x = [1, 2, 3]\nx.reverse()"
+    },
+    {
+      "question": "What is the output of this code?",
+      "options": ["a) 0", "b) 1", "c) 2", "d) 3"],
+      "correct_answer": "b) 1",
+      "id": 60,
+      "code": "x = [1, 2, 3]\nprint(sum(x) / len(x))"
+    },
+    {
+      "question": "Which is used to sort a list in Python?",
+      "options": ["a) sort()", "b) order()", "c) arrange()", "d) sequence()"],
+      "correct_answer": "a) sort()",
+      "id": 61,
+      "code": "x = [3, 1, 2]\nx.sort()"
+    },
+    {
+      "question": "What is the output of this code?",
+      "options": ["a) 0", "b) 1", "c) 2", "d) 3"],
+      "correct_answer": "c) 2",
+      "id": 62,
+      "code": "x = [1, 2, 3]\nprint(x.pop())"
+    },
+    {
+      "question": "Which is used to add an item to a list?",
+      "options": ["a) add()", "b) append()", "c) insert()", "d) push()"],
+      "correct_answer": "b) append()",
+      "id": 63,
+      "code": "x = [1, 2]\nx.append(3)"
+    },
+    {
+      "question": "What is the output of this code?",
+      "options": ["a) 0", "b) 1", "c) 2", "d) 3"],
+      "correct_answer": "d) 3",
+      "id": 64,
+      "code": "x = [1, 2]\nx.append(3)\nprint(len(x))"
+    },
+    {
+      "question": "Which is used to remove an item from a list?",
+      "options": ["a) delete()", "b) remove()", "c) discard()", "d) erase()"],
+      "correct_answer": "b) remove()",
+      "id": 65,
+      "code": "x = [1, 2, 3]\nx.remove(2)"
+    },
+    {
+      "question": "What is the output of this code?",
+      "options": ["a) 0", "b) 1", "c) 2", "d) 3"],
+      "correct_answer": "b) 1",
+      "id": 66,
+      "code": "x = [1, 2, 3]\nx.remove(2)\nprint(len(x))"
+    },
+    {
+      "question": "Which is used to find an item's index in a list?",
+      "options": ["a) find()", "b) search()", "c) index()", "d) locate()"],
+      "correct_answer": "c) index()",
+      "id": 67,
+      "code": "x = [1, 2, 3]\nprint(x.index(2))"
+    },
+    {
+      "question": "What is the output of this code?",
+      "options": ["a) 0", "b) 1", "c) 2", "d) 3"],
+      "correct_answer": "c) 2",
+      "id": 68,
+      "code": "x = [1, 2, 3]\nprint(x.index(3))"
+    },
+    {
+      "question": "Which is used to copy a list?",
+      "options": [
+        "a) copy()",
+        "b) clone()",
+        "c) duplicate()",
+        "d) replicate()"
+      ],
+      "correct_answer": "a) copy()",
+      "id": 69,
+      "code": "x = [1, 2, 3]\ny = x.copy()"
+    },
+    {
+      "question": "What is the output of this code?",
+      "options": ["a) 0", "b) 1", "c) 2", "d) 3"],
+      "correct_answer": "d) 3",
+      "id": 70,
+      "code": "x = [1, 2, 3]\ny = x.copy()\nprint(len(y))"
+    }
+  ]
+}

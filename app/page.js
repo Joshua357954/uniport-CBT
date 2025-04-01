@@ -12,6 +12,7 @@ const Terminal = "/images/terminal.svg";
 import {
   FaChevronRight as Arrow,
   FaMicrochip,
+  FaPython,
   FaQuestionCircle,
   FaTerminal,
   FaWhatsapp,
@@ -139,6 +140,10 @@ function home() {
     navigate.push(`/quiz?course=vbnet2`);
   }
 
+  function openPython() {
+    navigate.push(`/quiz?course=python`);
+  }
+
   function openPascal() {
     navigate.push(`/quiz?course=vbnet`);
   }
@@ -216,6 +221,16 @@ function home() {
                 title="VB.NET (200Lvl)"
                 subtitle="Master VB.NET with Interactive CBT"
                 openSelection={openVB2}
+              />
+            )}
+
+            {getUser()?.level === "200" && (
+              <Card
+                icon={<FaPython className="text-gray-900" />}
+                bg="bg-indigo-100"
+                title="Python "
+                subtitle="Ace Your Python Exams with CBT"
+                openSelection={openPython}
               />
             )}
 
