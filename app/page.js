@@ -246,13 +246,26 @@ function home() {
           </div>
         </section>
 
-        <p className="text-center text-sm text-gray-500 px-3 rounded-lg">
+        {/* <p className="text-center text-sm text-gray-500 px-3 rounded-lg">
           Made with <span className="text-red-500 text-xl mb-2">&hearts;</span>{" "}
           by <br />
           <b className="text-gray-800">Joshua Boyi</b> &{" "}
           <b className="text-gray-800">Chisom Joseph</b> <br />
           <i className="text-gray-600">Courtesy: CSC Year 3</i>
-        </p>
+        </p> */}
+        <div className="text-md text-gray-700 w-[75%] sm:w-[60%] mx-auto bgi-blue-500">
+          <p className="mb-2">
+            Want an easier uni life? Follow 
+            <Link target="blank"
+              href="https://instagram.com/useqitt"
+              className="text-green-600 font-semibold hover:underline"
+            >
+              &nbsp;@useqitt
+            </Link>{" "}
+            for more!
+          </p>
+          <p>Made with ❤️ by <b>Team Qitt</b>  <b>-</b>  <b>(</b>Courtesy: CSC Yr3<b>)</b></p>
+        </div>
 
         <div className="flex justify-center pb-4 w-full">
           <button
