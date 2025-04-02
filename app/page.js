@@ -209,7 +209,7 @@ function home() {
                 icon={<FaTerminal className="text-yellow-600" />}
                 bg="bg-yellow-100"
                 title="CSC 280 (Fortran)"
-                subtitle="Practice Fortran with lots of Questions"
+                subtitle="Practice Fortran Questions"
                 openSelection={openSelection}
               />
             )}
@@ -219,7 +219,7 @@ function home() {
                 icon={<FaWindows className="text-green-600" />}
                 bg="bg-green-100"
                 title="VB.NET (200Lvl)"
-                subtitle="Master VB.NET with Interactive CBT"
+                subtitle="Master VB.NET with CBT BOX"
                 openSelection={openVB2}
               />
             )}
@@ -229,7 +229,7 @@ function home() {
                 icon={<FaPython className="text-gray-900" />}
                 bg="bg-indigo-100"
                 title="Python "
-                subtitle="Ace Your Python Exams with CBT"
+                subtitle="Pass Your Python Exams"
                 openSelection={openPython}
               />
             )}
@@ -253,7 +253,7 @@ function home() {
           <b className="text-gray-800">Chisom Joseph</b> <br />
           <i className="text-gray-600">Courtesy: CSC Year 3</i>
         </p> */}
-        <div className="text-md text-gray-700 w-[75%] sm:w-[60%] mx-auto bgi-blue-500">
+        <div className="text-md text-gray-700 w-[75%] text-center sm:text-left sm:w-[60%] mx-auto bgi-blue-500">
           <p className="mb-2">
             Want an easier uni life? Follow 
             <Link target="blank"
