@@ -253,7 +253,7 @@ function home() {
           <b className="text-gray-800">Chisom Joseph</b> <br />
           <i className="text-gray-600">Courtesy: CSC Year 3</i>
         </p> */}
-        <div className="text-md text-gray-700 w-full text-center sm:text-left sm:w-[60%] mx-auto bgi-blue-500">
+        <div className="text-sm sm:text-md text-gray-700 w-full text-center sm:text-left sm:w-[60%] mx-auto bgi-blue-500 px-4 sm:px-0">
           <p className="mb-2">
             Want an easier uni life? Follow 
             <Link target="blank"
